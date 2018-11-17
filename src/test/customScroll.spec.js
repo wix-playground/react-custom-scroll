@@ -53,7 +53,7 @@ describe('custom scroll', function () {
         maxHeight: visibleHeight,
         width: 50
       }
-    }, scrolledContent)
+    }, React.createElement('div', {}, scrolledContent))
     const customScroll = reactDOM.render(React.createElement(CustomScroll, props, content), container)
     customScroll.forceUpdate()
     return customScroll
